@@ -36,7 +36,7 @@ header {
 }
 
 /* Animación de entrada */
-.fade-in {
+.animacion {
     animation: fadeIn 1s ease-in-out;
 }
 
@@ -49,19 +49,25 @@ header {
     }
 }
 
-.back-button {
-    display: block;
-    margin: 20px auto;
-    padding: 10px 20px;
-    background-color: #bf7b1d; /* Color de botón marrón claro */
+/*Botón del footer para llevarte a otros sitios*/
+
+.boton {
+    background-color: #5c4422; 
     color: #fff;
-    border: none;
-    border-radius: 5px;
-    font-weight: bold;
-    font-size: 1.2em;
-    cursor: pointer;
+    text-align: center;
+    padding: 60px;
 }
 
-.back-button:hover {
-    background-color: #8B4513; /* Cambia de color al pasar el ratón sobre el botón */
+/*Botón del footer para llevarte a otros sitios*/
+
+.back-boton {
+    background-color: #bf7b1d; 
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.2em;
+}
+
+.back-boton:hover {background-color:#8B4513;
+                    color: #000000;
 }
