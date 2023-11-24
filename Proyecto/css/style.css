@@ -1,0 +1,113 @@
+/*************************************************************************/
+/*     Autor: Javier Ballesteros                                         */
+/*     Fecha: 17/11/2023                                                 */
+/*                                                                       */ 
+/*                                                                       */
+/*                                                                       */
+/*************************************************************************/
+
+
+/*Para poner tipografía*/
+
+@font-face {
+    font-family: letra;
+    src: url(../FONT/autumn-in-november.zip);
+}
+
+@font-face {
+    font-family: texto;
+    src: url(../FONT/southing.regular.ttf);
+}
+
+
+/*El cuerpo de la página*/
+
+body {
+    font-family: letra;
+    margin: 0;
+    padding: 0;
+    background-color: #f0e6d2; /* Color de fondo suave */
+    color: #333; /* Color de texto principal */
+}
+
+/*La cabecera, para nosotros el nav*/
+
+header {
+    background-color: #8B4513;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    position: relative;
+}
+
+/*Frase de arriba, Donde pone "Tienda de ropa"*/
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/*El título de la página web (la presentación) */
+
+.Titulo {
+    background-size: cover;
+    background-position: center;
+    color: #000000;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.Titulo h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.Titulo p {
+    font-size: 1.5em;
+}
+
+/*Esto son los recuadros donde ponen zapatillas, Hodies, etc */
+
+.Diseños {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #e0d4bf; /* Color de fondo para la sección destacada */
+    padding: 40px;
+}
+
+.Imagenes {
+    text-align: center;
+}
+
+.Imagenes img {
+    max-width: 70%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/*La barra de abajo para dar el toque a la paleta de colores y meter el botón para cambiar de página*/
+
+.footer {
+    background-color: #5c4422; /* Fondo marrón oscuro para la sección de llamada a la acción */
+    color: #fff;
+    text-align: center;
+    padding: 60px;
+}
+
+.footer.boton {
+    display: inline-block;
+    background-color: #bf7b1d; /* Color de botón marrón claro */
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.2em;
+}
+
+/*Sección responsive*/
+
+@media only screen and (width<650px){
+    .Diseños {grid-template-columns: 100%;}
+}
+    
+
