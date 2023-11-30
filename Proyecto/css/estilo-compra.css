@@ -2,8 +2,8 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #5c4422; /* Fondo marrón oscuro */
-    color: #fff; /* Texto blanco */
+    background-color: #5c4422; 
+    color: #fff; 
 }
 
 header {
@@ -13,23 +13,26 @@ header {
     text-align: center;
 }
 
-.product-section {
+/*Aquí van las fotos y el texto*/
+
+.Seccion-productos {
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 40px;
 }
 
-.product-item {
+.productos {
     text-align: center;
 }
 
-.product-item img {
+.productos img {
     max-width: 100%;
     border-radius: 8px;
     margin-bottom: 15px;
 }
 
+/* Aquí se pone el recuadro para poner el precio de los productos*/
 .price {
     font-size: 1.2em;
     font-weight: bold;
@@ -57,8 +60,6 @@ header {
     text-align: center;
     padding: 60px;
 }
-
-/*Botón del footer para llevarte a otros sitios*/
 
 .back-boton {
     background-color: #bf7b1d; 

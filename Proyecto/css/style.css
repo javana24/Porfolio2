@@ -11,26 +11,26 @@
 
 @font-face {
     font-family: letra;
-    src: url(../FONT/autumn-in-november.zip);
+    src: url(../FONT/southing.regular.ttf);
 }
 
 @font-face {
     font-family: texto;
-    src: url(../FONT/southing.regular.ttf);
+    src: url(../FONT/autumn-in-november.zip);
 }
 
 
 /*El cuerpo de la página*/
 
 body {
-    font-family: letra;
+    font-family: texto;
     margin: 0;
     padding: 0;
     background-color: #f0e6d2; 
     color: #000000; 
 }
 
-/*La cabecera, para nosotros el nav*/
+/*La cabecera, para nosotros como un nav*/
 
 header {
     background-color: #8B4513;
@@ -107,6 +107,66 @@ header {
 
 .footer-boton:hover {background-color:#8B4513;
                     color: #000000;
+}
+
+/*Sección del grid*/
+.grid-4{display: grid;
+        grid-template-columns: auto auto auto auto;
+        margin-top: 70px;
+        margin-top: 40px;}
+
+
+.col-4 {border: 1px solid black;
+        border-radius: 40px 40px 40px 40px;
+        padding: 20px;
+        box-shadow: -5px 3px 3px beige;
+        margin-bottom: 50px;
+        margin-left: 30px;
+        margin-right: 30px;}
+/*Seccion de fotos*/
+
+#fotos img {width:100%;}
+
+
+/*Sección de accordion*/
+
+/* Estilo de los botones cuando se abre y se cierra */
+.accordion {
+    background-color: #000000;
+    font-size: 1.2em;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.7s;
+}
+
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+    background-color: #494747;
+}
+
+  /* Style the accordion panel. Note: hidden by default */
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+}
+
+.accordion:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
 }
 
 /*Sección responsive*/
