@@ -70,43 +70,36 @@ header {
 
 /*Esto es donde va la nav*/
 .topnav {
-    background-color: #333;
+    background-color: #794311;
     overflow: hidden;
+
 }
 
-  /* Style the links inside the navigation bar */
-
-nav {
+.topnav {
     text-align: center;
-    margin: 20px;
-    padding: 20px;
+    margin: 30px;
+    padding: 30px;
+    
 }
 
-nav i {
-    display: none;
-}
-nav ul {
-    list-style: none;
-    margin: 20px;
-    padding: 20px;
-    text-align: center;
-}
 
-nav li {
-    display: inline-block;
-    margin-right: 40px;
-}
-
-nav a {
+.topnav a {
     color: #000000;
     font-family: texto;
     font-size: 30px;
     font-weight: bold;
+    margin: 5px;
 }
 
-nav a:hover {
+.topnav a:hover {
     border-bottom: 2px solid #000000;
 }
+
+
+.topnav .icon {
+    display: none;
+}
+
 
 /*Esto son los recuadros donde ponen zapatillas, Hodies, etc */
 
@@ -266,6 +259,8 @@ footer {
     }
 }
 
+/*Barra de navegación responsive*/
+
 @media screen and (max-width: 600px) {
     .topnav a:not(:first-child) {display: none;}
     .topnav a.icon {
@@ -274,17 +269,9 @@ footer {
     }
 }
 
-  /* Para que en el movil el grid sea responsive */
-@media screen and (max-width: 600px) {
-    .grid {
-        grid-template-columns: auto;
-        max-width: 200%;
-    }
-}
-
 @media screen and (max-width: 600px) {
     .topnav.responsive {position: relative;}
-    .topnav.responsive a.icon {
+    .topnav.responsive .icon {
     position: absolute;
     right: 0;
     top: 0;
@@ -295,3 +282,11 @@ footer {
     text-align: left;
     }
 }
+  /* Para que en el movil el grid sea responsive */
+@media screen and (max-width: 600px) {
+    .grid {
+        grid-template-columns: auto;
+        max-width: 200%;
+    }
+}
+
