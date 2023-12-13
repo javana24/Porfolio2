@@ -1,0 +1,303 @@
+/*************************************************************************/
+/*     Autor: Javier Ballesteros                                         */
+/*     Fecha: 17/11/2023                                                 */
+/*                                                                       */ 
+/*                                                                       */
+/*                                                                       */
+/*************************************************************************/
+
+
+/*Para poner tipografía*/
+
+@font-face {
+    font-family: letra;
+    src: url(../FONT/southing.regular.ttf);
+}
+
+@font-face {
+    font-family: texto;
+    src: url(../FONT/autumn-in-november.zip);
+}
+
+
+/*El cuerpo de la página*/
+
+body {
+    font-family: texto;
+    margin: 0;
+    padding: 0;
+    background-color: #f0e6d2; 
+    color: #000000; 
+}
+
+/*La cabecera, para nosotros como un nav*/
+
+header {
+    background-color: #8B4513;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    position: relative;
+}
+
+/*Frase de arriba, Donde pone "Tienda de ropa"*/
+
+.logo {
+    font-family: texto;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/*El título de la página web (la presentación) */
+
+.Titulo {
+    background-position: center;
+    color: #000000;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.Titulo h1 {
+    font-family: letra;
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.Titulo p {
+    font-size: 1.5em;
+    font-family: texto;
+}
+
+/*Esto es donde va la nav*/
+
+.topnav {
+    overflow: hidden;
+    position: fixed;
+    padding: 10px;
+    width: 40%;
+    top: 10%;
+    animation: slideDown 1.5s ease-in-out;
+    justify-content: center;
+    text-align: center;
+    background-color: #aa6933;
+}
+
+
+.topnav a {
+    color: #ffffff;
+    font-family: texto;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 5px;
+}
+
+.topnav a:hover {
+    color: #000000;
+}
+
+
+.topnav .icon {
+    display: none;
+}
+
+
+/*Esto son los recuadros donde ponen zapatillas, Hodies, etc */
+
+.Diseños {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #e0d4bf; 
+    padding: 40px;
+}
+
+.Imagenes {
+    text-align: center;
+}
+
+.Imagenes img {
+    max-width: 70%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/*La barra de abajo para dar el toque a la paleta de colores y meter el botón para cambiar de página*/
+
+.footer {
+    background-color: #5c4422; 
+    color: #fff;
+    text-align: center;
+    padding: 60px;
+}
+
+/*Botón del footer para llevarte a otros sitios*/
+
+.footer-boton {
+    background-color: #bf7b1d; 
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.2em;
+}
+
+.footer-boton:hover {background-color:#8B4513;
+                    color: #000000;
+}
+
+/*Sección del grid para la gallery*/
+.grid {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 4px;
+}
+
+.column {
+    max-width: 100%;
+    padding: 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    width: 100%;
+}
+
+/*Seccion de nuestra historia*/
+
+.historia {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #D2B48C; 
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+p.extra-content {
+    display: none;
+}
+
+button {
+    background-color: #8B4513; 
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #A0522D; 
+}
+
+
+/*Aquí va el footer*/
+
+footer {
+    background-color: #834614;
+    color: #ecf0f1;
+    padding: 20px 0;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-content p {
+    margin: 20px;
+}
+
+.social-icons a {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.social-icons img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2);
+}
+
+/*Seccion de fotos*/
+
+.fotos img {width:100%;}
+
+.fotos
+
+
+/*Sección responsive*/
+
+.animacion {
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 2;
+    }
+}
+
+  /* Para que el grid en la tablet sea responsive */
+@media screen and (max-width: 800px) {
+    .grid {
+        grid-template-columns: auto auto;
+        max-width: 150%;
+    }
+}
+
+/*Barra de navegación responsive*/
+
+@media screen and (max-width: 1320px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+    float: right;
+    display: block;
+    top: -10px;
+    }
+}
+
+@media screen and (max-width: 1320px) {
+    .topnav.responsive {position: fixed;}
+    .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: -10px;
+    }
+    .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+    }
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-50px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+  /* Para que en el movil el grid sea responsive */
+@media screen and (max-width: 600px) {
+    .grid {
+        grid-template-columns: auto;
+        max-width: 200%;
+    }
+}
+
