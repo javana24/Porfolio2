@@ -69,23 +69,14 @@ header {
 }
 
 /*Esto es donde va la nav*/
+
 .topnav {
     overflow: hidden;
     position: fixed;
-    top: 9%;
-    width: 80%;
-    margin: 20%;
-    animation: slideDown 1.5s ease-in-out;
-    justify-content: center;
-    text-align: center;
-}
-
-
-.topnav {
-    text-align: center;
-    margin: 10px;
     padding: 10px;
-    width: 50%;
+    width: 40%;
+    top: 10%;
+    animation: slideDown 1.5s ease-in-out;
     justify-content: center;
     text-align: center;
     background-color: #aa6933;
@@ -93,7 +84,7 @@ header {
 
 
 .topnav a {
-    color: #fadfc0;
+    color: #ffffff;
     font-family: texto;
     font-size: 30px;
     font-weight: bold;
@@ -270,20 +261,21 @@ footer {
 
 /*Barra de navegación responsive*/
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1320px) {
     .topnav a:not(:first-child) {display: none;}
     .topnav a.icon {
     float: right;
     display: block;
+    top: -10px;
     }
 }
 
-@media screen and (max-width: 600px) {
-    .topnav.responsive {position: relative;}
+@media screen and (max-width: 1320px) {
+    .topnav.responsive {position: fixed;}
     .topnav.responsive .icon {
     position: absolute;
     right: 0;
-    top: 0;
+    top: -10px;
     }
     .topnav.responsive a {
     float: none;

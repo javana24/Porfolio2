@@ -12,7 +12,7 @@ function myFunction() {
 var navbar = document.querySelector('.navbar');
 
 // Captura la posición inicial de la barra de navegación
-var sticky = navbar.offsetTop;
+
 
 // Función que se ejecuta al hacer scroll
 function stickyNavbar() {
