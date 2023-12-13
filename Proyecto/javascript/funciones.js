@@ -8,6 +8,26 @@ function myFunction() {
   }
 }
 
+// Captura la barra de navegación
+var navbar = document.querySelector('.navbar');
+
+// Captura la posición inicial de la barra de navegación
+var sticky = navbar.offsetTop;
+
+// Función que se ejecuta al hacer scroll
+function stickyNavbar() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add('fixed');
+  } else {
+    navbar.classList.remove('fixed');
+  }
+}
+
+// Registra el evento de scroll y llama a la función
+window.onscroll = function() {
+  stickyNavbar();
+};
+
 
 function toggleReadMore() {
     var extraContent = document.querySelector('.extra-content');
